@@ -34,7 +34,7 @@ const CareerTemplate = ({
           <article className="career-desc">
             {documentToReactComponents(JSON.parse(description.raw))}
             <strong style={{ fontSize: "1.2rem" }}>
-              Contact us at <u>careers@bignews.com</u>, if you fit bill.
+              CONTACT us at <u>careers@bignews.com</u>, if you fit bill.
             </strong>
           </article>
         </section>

@@ -7,15 +7,17 @@ import NewsletterForm from "../components/NewsletterForm"
 import Head from "../components/Head"
 
 export default function Home() {
-  return (
-    <Layout>
-      <Head title="Home" />
-      <Header />
-      <hr />
-      <CategoriesSection />
-      <hr />
-      <LatestNews />
-      <NewsletterForm />
-    </Layout>
-  )
+  if (typeof window !== "undefined") {
+    return (
+      <Layout>
+        <Head title="Home" />
+        <Header />
+        <hr />
+        <CategoriesSection />
+        <hr />
+        <LatestNews />
+        <NewsletterForm />
+      </Layout>
+    )
+  }
 }

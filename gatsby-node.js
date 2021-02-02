@@ -53,7 +53,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /tiny-slider-react/,
+            test: /tiny-slider/,
             use: loaders.null(),
           },
         ],

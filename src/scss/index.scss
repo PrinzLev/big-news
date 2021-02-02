@@ -223,14 +223,22 @@ Latest News
 .latest-news {
   height: 65vh;
   text-align: center;
+  .arrow-icon {
+    font-size: 2rem;
+    transition: linear 0.3s;
+    &:hover {
+      color: #a6a9b6;
+      cursor: pointer;
+    }
+  }
   h1 {
     margin-bottom: 25px;
     font-size: 2rem;
   }
   article {
-    margin: 25px 0;
     opacity: 0.8;
     transition: linear 0.3s;
+    margin: 0 15px 25px;
     &:hover {
       opacity: 1.2;
     }
@@ -240,6 +248,7 @@ Latest News
     }
     h2 {
       font-size: 1.25rem;
+      white-space: pre-line;
     }
     p {
       font-size: 0.8rem;
@@ -249,33 +258,8 @@ Latest News
       color: #000;
     }
   }
-  .tns-controls {
-    width: 100vw;
-    button {
-      background-color: #fff;
-      color: #000;
-      border: 0;
-      font-size: 1.45rem;
-      transition: linear 0.3s;
-      padding: 3px;
-      &:hover {
-        color: #605a56;
-      }
-      &:focus {
-        outline: none;
-      }
-      &:first-child {
-        margin-right: 600px;
-      }
-      &:last-child {
-        margin-left: 600px;
-      }
-    }
-    &:focus {
-      outline: none;
-    }
-  }
 }
+
 .btn {
   padding: 15px;
   border-radius: 10px;
