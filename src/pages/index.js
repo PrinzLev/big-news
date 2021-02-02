@@ -7,7 +7,6 @@ import NewsletterForm from "../components/NewsletterForm"
 import Head from "../components/Head"
 
 export default function Home() {
-  if (typeof window !== "undefined") {
     return (
       <Layout>
         <Head title="Home" />
@@ -19,5 +18,4 @@ export default function Home() {
         <NewsletterForm />
       </Layout>
     )
-  }
 }
