@@ -34,9 +34,9 @@ const ArticlesPage = ({ data }) => {
       <section className="page">
         <h1>All Articles</h1>
         {nodes.map(
-          ({ excerpt, title, image, date, author, category, slug }) => {
+          ({ excerpt, title, image, date, author, category, slug, index }) => {
             return (
-              <section className="article">
+              <section className="article" key={index}>
                 <div className="article-img">
                   <Image fluid={image.fluid} />
                 </div>

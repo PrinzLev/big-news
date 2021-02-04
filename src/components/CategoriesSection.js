@@ -35,9 +35,9 @@ const CategoriesSection = () => {
     <section className="categories-section">
       <h1>Categories</h1>
       <div className="catergories-selection">
-        {categories.map(({ icon, category, desc }) => {
+        {categories.map(({ icon, category, desc, index }) => {
           return (
-            <Link to={`/${category.toLowerCase()}`}>
+            <Link to={`/${category.toLowerCase()}`} className={index}>
               {icon}
               <h2>{category}</h2>
               <p>{desc}</p>

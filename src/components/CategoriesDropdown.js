@@ -19,7 +19,9 @@ const CategoriesDropdown = ({ toggle }) => {
         {distinct.map(category => {
           return (
             <li>
-              <Link to={`/${category.toLowerCase()}`}>{category}</Link>
+              <Link to={`/${category.toLowerCase()}`} key={category.index}>
+                {category}
+              </Link>
             </li>
           )
         })}

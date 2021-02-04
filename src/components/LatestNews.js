@@ -40,9 +40,9 @@ const LatestNews = () => {
         infinite
         itemWidth={420}
       >
-        {nodes.map(({ excerpt, title, image, slug }) => {
+        {nodes.map(({ index, excerpt, title, image, slug }) => {
           return (
-            <article>
+            <article key={index}>
               <Link to={`/articles/${slug}`}>
                 <Image fluid={image.fluid} />
                 <h2>{title}</h2>

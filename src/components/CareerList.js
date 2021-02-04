@@ -8,7 +8,7 @@ const CareerList = ({ careers }) => {
       <ul>
         {careers.map(career => {
           return (
-            <Link to={`/careers/${career.slug}`}>
+            <Link to={`/careers/${career.slug}`} key={career.index}>
               <li key={career.index}>
                 <h4>{career.title}</h4>
                 <span>

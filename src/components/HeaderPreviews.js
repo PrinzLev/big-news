@@ -28,9 +28,9 @@ const HeaderPreviews = () => {
   } = useStaticQuery(query)
   return (
     <section className="header-previews">
-      {nodes.map(({ slug, excerpt, title, image }) => {
+      {nodes.map(({ index, slug, excerpt, title, image }) => {
         return (
-          <Link to={`/articles/${slug}`}>
+          <Link to={`/articles/${slug}`} key={index}>
             <Image fluid={image.fluid} />
             <h2>{title}</h2>
             <p>{excerpt}</p>
